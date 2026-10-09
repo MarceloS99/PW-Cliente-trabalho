@@ -2,9 +2,9 @@
 Trabalho Prático de Programação Web - Cliente (ISLA Gaia): Guia turístico e cultural de Gaia e Porto.
 
 # Projeto: Descobrir Gaia & Porto
-Unidade Curricular: Programação Web - Cliente [15791]  
-Instituição: ISLA Gaia  
-Docente: José Augusto de Araújo Monteiro  
+*Unidade Curricular:* Programação Web - Cliente [15791]  
+*Instituição:* ISLA Gaia  
+*Docente:* José Augusto de Araújo Monteiro  
 
 ## Identificação do Grupo
 - Marcelo Sousa - a22502530
