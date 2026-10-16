@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descobrir Gaia e Porto - Contactos</title>
+</head>
+<body>
+
+
+  <header>
+    <h1>Contactos e Informações</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="monumentos.html">Monumentos</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="roteiros.html">Roteiros</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+        <li><a href="acessibilidade.html">Acessibilidade</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteudo principal da pagina -->
+  <main>
+
+    <!-- Secao de apresentacao -->
+    <section>
+      <h2>Fale Connosco</h2>
+      <p>
+        Tem dúvidas sobre os roteiros, sugestões de novos pontos turísticos ou pretende
+        informações personalizadas sobre a sua visita a Gaia e ao Porto? <br>Preencha o
+        formulário abaixo para entrar em contacto com a nossa equipa.
+      </p>
+    </section>
+
+    <!-- Formulario com validacao nativa e acessibilidade -->
+    <section>
+      <h2>Formulário de contacto</h2>
+
+      <form action="#" method="post">
+
+        <!-- Controlo 1: Texto (Nome) -->
+        <p>
+          <label for="campo-nome">Nome completo (obrigatório):</label><br>
+          <input type="text" id="campo-nome" name="nome" required minlength="3" placeholder="Ex: Maria Santos">
+        </p>
+
+        <!-- Controlo 2: Email -->
+        <p>
+          <label for="campo-email">Endereço de correio eletrónico (obrigatório):</label><br>
+          <input type="email" id="campo-email" name="email" required placeholder="exemplo@dominio.pt">
+        </p>
+
+        <!-- Controlo 3: Telefone com pattern -->
+        <p>
+          <label for="campo-telefone">Telefone de contactos (9 dígitos):</label><br>
+          <input type="tel" id="campo-telefone" name="telefone" pattern="[0-9]{9}" placeholder="912345678" maxlength = "9">
+        </p>
+
+        <!-- Controlo 4: Data -->
+        <p>
+          <label for="campo-data">Data prevista da visita:</label><br>
+          <input type="date" id="campo-data" name="data_visita">
+        </p>
+
+        <!-- Controlo 5: Numero -->
+        <p>
+          <label for="campo-pessoas">Número de participantes no grupo:</label><br>
+          <input type="number" id="campo-pessoas" name="pessoas" min="1" max="20" value="1">
+        </p>
+
+        <!-- Controlo 6: Caixa de selecao (Select) -->
+        <p>
+          <label for="campo-assunto">Assunto da mensagem (obrigatório):</label><br>
+          <select id="campo-assunto" name="assunto" required>
+            <option value="">-- Selecione uma opção --</option>
+            <option value="roteiros">Dúvidas sobre Roteiros</option>
+            <option value="monumentos">Informação sobre Monumentos</option>
+            <option value="gastronomia">Recomendações de Gastronomia</option>
+            <option value="acessibilidade">Apoio ou Sugestões de Acessibilidade</option>
+            <option value="outro">Outro assunto</option>
+          </select>
+        </p>
+
+        <!-- Controlo 7: Area de texto (Textarea) -->
+        <p>
+          <label for="campo-mensagem">A sua mensagem (obrigatório, mínimo 10 carateres):</label><br>
+          <textarea id="campo-mensagem" name="mensagem" rows="6" cols="40" required minlength="10" placeholder="Escreva aqui a sua mensagem..."></textarea>
+        </p>
+
+        <!-- Controlo 8: Checkbox (Consentimento) -->
+        <p>
+          <input type="checkbox" id="campo-termos" name="termos" required>
+          <label for="campo-termos">Declaro que li e compreendi as informações de contactos e acessibilidade.</label>
+        </p>
+
+        <!-- Botao de submissao -->
+        <p>
+          <button type="submit">Enviar Mensagem</button>
+        </p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Descobrir Gaia e Porto. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
