@@ -1,0 +1,177 @@
+/* 
+   Descobrir Gaia & Porto — Folha de Estilos Principal 
+   Etapa 3 (E3) — CSS Base, Identidade Visual e Acessibilidade
+*/
+
+/* 1. Variáveis Globais (:root) — Paleta de Cores e Tipografia */
+:root {
+  --cor-primaria: #1A365D;      /* Azul Douro */
+  --cor-secundaria: #975A16;    /* Dourado Vinho do Porto */
+  --cor-fundo: #F7FAFC;         /* Fundo Neutro Suave */
+  --cor-texto: #1A202C;         /* Grafite Escuro */
+  --cor-granito: #4A5568;       /* Cinzento Granito */
+  --cor-branca: #FFFFFF;        /* Branco Puro */
+  
+  --fonte-principal: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --raio-borda: 12px;           /* Cantos arredondados */
+}
+
+/* 2. Reset Básico e Estrutura Geral (Regras 1 a 3) */
+*⁠ {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* 3. Cabeçalho e Navegação Global (Regras 4 a 7) */
+header {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branca);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--cor-branca);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--cor-branca);
+  border-bottom: 2px solid var(--cor-secundaria);
+}
+
+/* 4. Tipografia e Títulos (Regras 8 a 10) */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--cor-primaria);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+}
+
+/* 5. Elementos Multimédia e Imagens (Regra 11) */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--raio-borda);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  margin: 1.5rem auto;
+}
+
+/* 6. Tabelas de Conteúdo (Regras 12 e 13) */
+
+caption {
+  font-size: 1.5rem;
+  display: table-caption;
+  text-align: -webkit-center;
+  unicode-bidi: isolate;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background-color: var(--cor-branca);
+  border-radius: var(--raio-borda);
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+th {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branca);
+}
+
+/* 7. Formulários e Acessibilidade de Foco (Regras 14 a 16) */
+form {
+  background-color: var(--cor-branca);
+  padding: 1.5rem;
+  border-radius: var(--raio-borda);
+  margin: 1.5rem 0;
+}
+
+input, select, textarea, button {
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--cor-granito);
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Indicador de foco nítido para navegação por teclado (WCAG 2.2) */
+input:focus, select:focus, textarea:focus, button:focus, a:focus {
+  outline: 2px solid var(--cor-primaria);
+  outline-offset: 2px;
+}
+
+button {
+  background-color: var(--cor-primaria);
+  color: var(--cor-branca);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* 8. Rodapé (Regra 17) */
+footer {
+  background-color: var(--cor-granito);
+  color: var(--cor-branca);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.875rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: var(--cor-branca);
+  text-decoration: underline;
+}
