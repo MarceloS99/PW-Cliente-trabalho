@@ -66,6 +66,11 @@ nav a:focus {
   color: var(--cor-branca);
   border-bottom: 2px solid var(--cor-secundaria);
 }
+nav a.ativo {
+  color: var(--cor-secundaria);
+  font-weight: 700;
+  border-bottom: 2px solid var(--cor-secundaria);
+}
 
 /* 4. Tipografia e Títulos (Regras 8 a 10) */
 h1 {
