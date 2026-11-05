@@ -296,7 +296,7 @@ footer a {
 }
 
 /* 
-   E5 — Mobile-First, Acessibilidade e Responsividade
+  Mobile-First, Acessibilidade e Responsividade
 */
 
 /* 1. Estilos Base (Mobile-First: por defeito para telemóveis a partir de 360px) */
@@ -391,8 +391,26 @@ nav ul {
   .galeria {
     grid-template-columns: repeat(3, 1fr);
   }
+}
 
-  nav ul {
-    justify-content: flex-end; /* Alinha o menu à direita no desktop */
-  }
+/* IMAGENS RESPONSIVAS E PADRONIZAÇÃO */
+
+/* Regra Global: impede que as imagens ultrapassem o ecrã */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Padronização exata do tamanho de todas as imagens em cartões/galerias */
+.card img, 
+.galeria img, 
+figure img,
+main img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
 }
