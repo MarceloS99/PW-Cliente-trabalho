@@ -81,6 +81,32 @@ nav a.ativo {
   border-bottom: 2px solid var(--cor-secundaria);
 }
 
+/* Personalização da Caixa do Índice do Artigo */
+nav[aria-label="Índice do Artigo"] {
+  background-color: #F8FAFC;         /* Fundo cinza muito claro */
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid var(--cor-primaria); /* Barra lateral a Azul Douro */
+  border-radius: 6px;
+  margin: 1.5rem 0;
+}
+
+nav[aria-label="Índice do Artigo"] h3 {
+  color: var(--cor-primaria);       /* Azul Douro #1A365D */
+  margin-bottom: 0.75rem;
+}
+
+nav[aria-label="Índice do Artigo"] ol li a {
+  color: var(--cor-primaria);       /* Cor das ligações do índice */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav[aria-label="Índice do Artigo"] ol li a:hover,
+nav[aria-label="Índice do Artigo"] ol li a:focus {
+  color: #975A16;                   /* Dourado ao passar o rato ou focar */
+  text-decoration: underline;
+}
+
 /* 4. Tipografia e Títulos (Regras 8 a 10) */
 h1 {
   font-size: 2rem;
@@ -89,7 +115,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  color: var(--cor-primaria);
+  color: var(--cor-branca);
   margin-bottom: 1rem;
 }
 
