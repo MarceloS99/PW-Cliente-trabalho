@@ -340,3 +340,59 @@ select,
     margin: 0 auto;
   }
 }
+
+/* 
+  FLEXBOX NA NAVEGAÇÃO E CSS GRID
+*/
+
+/* --- Flexbox no Menu de Navegação (<nav>) --- */
+/* Em Mobile: os links do menu ficam empilhados em coluna */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* --- CSS Grid na Grelha de Conteúdos (.grid-cards ou .galeria) --- */
+/* Em Mobile: os cartões ficam numa única coluna */
+.grid-cards, 
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+
+/*RESPONSIVIDADE */
+
+/*  tablets (min-width 481px) */
+@media (min-width: 481px) {
+  /* Flexbox: Menu passa a linha horizontal */
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Grid: Grelha passa para 2 colunas */
+  .grid-cards, 
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*  desktops (min-width 769px) */
+@media (min-width: 769px) {
+  /* Grid: Grelha passa para 3 colunas */
+  .grid-cards, 
+  .galeria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  nav ul {
+    justify-content: flex-end; /* Alinha o menu à direita no desktop */
+  }
+}
