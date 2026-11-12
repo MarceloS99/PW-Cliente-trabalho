@@ -17,3 +17,8 @@ Sítio Web informativo e acessível sobre a região de Vila Nova de Gaia e Porto
 
 ## Público-Alvo
 Turistas nacionais e estrangeiros, visitantes ocasionais de fim de semana e estudantes universitários que procuram rotas pedonais, monumentos históricos, horários e pontos gastronómicos típicos.
+## Framework CSS Adotada (Etapa 6)
+
+•⁠  ⁠*Framework:* Bootstrap
+•⁠  ⁠*Versão:* v5.3.3
+•⁠  ⁠*Método de integração:* CDN oficial (jsDelivr) com CSS e Bundle JS, mantendo ficheiro de personalização separado (⁠ css/bootstrap-custom.css ⁠) sem alterar o código-fonte da framework.
