@@ -14,16 +14,23 @@
 </head>
 <body>
     <header>
-        <h1>Monumentos Históricos</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="monumentos.html" class="ativo" aria-current="page">Monumentos</a></li>
-                <li><a href="gastronomia.html">Gastronomia</a></li>
-                <li><a href="roteiros.html">Roteiros</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-                <li><a href="acessibilidade.html">Acessibilidade</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">Descobrir Gaia e Porto</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="monumentos.html">Monumentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gastronomia.html">Gastronomia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="roteiros.html">Roteiros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="acessibilidade.html">Acessibilidade</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -71,9 +78,9 @@
         <section>
             <h2 class="mb-3">Informações</h2>
             <div class="table-responsive">
-                <table class="table table-striped table-bordered align-middle">
+                <table class="table table-striped table-hover table-bordered caption-top align-middle table-custom">
                     <caption>Tabela de locais, horários e preços</caption>
-                    <thead class="table-dark">
+                    <thead>
                         <tr>
                             <th scope="col">Monumento</th>
                             <th scope="col">Localização</th>

@@ -1,0 +1,182 @@
+/* PERSONALIZAÇÕES BOOTSTRAP v5.3.3 — DESCOBRIR GAIA E PORTO
+   Ficheiro separado para customizar componentes sem alterar a framework
+ */
+
+/* 1. Personalização da Navbar (Cor institucional azul-marinho e sombra) */
+.navbar-custom {
+    background-color: #0b2545 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.navbar-custom .nav-link.active,
+.navbar-custom .nav-link:hover {
+    color: #975A16 !important;
+    border-bottom: 2px solid #975A16;
+}
+
+/* 2. Personalização dos Cards */
+.card-custom {
+    background-color: #FFFFFF;
+    border: 1px solid #4A5568;
+    border-top: 4px solid #975A16;
+    border-radius: 12px;
+    color: #1A202C;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(26, 54, 93, 0.15) !important;
+}
+
+.card-custom .card-title {
+    color: #1A365D;
+}
+
+/* 3. Personalização dos Botões Primários (.btn-custom) */
+.btn-custom {
+    background-color: #1A365D;
+    color: #FFFFFF;
+    border: 2px solid #1A365D;
+    border-radius: 25px;
+    padding: 0.45rem 1.25rem;
+    font-weight: 600;
+}
+
+.btn-custom:hover {
+    background-color: #975A16;
+    border-color: #975A16;
+    color: #FFFFFF;
+}
+
+/* 4. Personalização dos Badges (Etiquetas de localização Porto/Gaia) */
+.badge-gaia {
+    background-color: #1A365D;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    padding: 0.4em 0.75em;
+    border-radius: 6px;
+}
+
+.badge-porto {
+    background-color: #975A16;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 0.4em 0.75em;
+    border-radius: 6px;
+}
+
+/* 5. Personalização do Alert informativo (Destaque reforçado) */
+.alert-custom {
+    background-color: rgba(151, 90, 22, 0.14);
+    border: 1px solid #975A16;
+    border-left: 6px solid #975A16;
+    color: #1A202C;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    font-size: 1.05rem;
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.12);
+}
+
+.alert-custom strong {
+    color: #1A365D;
+    font-weight: 700;
+}
+
+/* 6. Personalização do Accordion (Perguntas Frequentes) */
+.accordion-custom .accordion-button {
+    color: #1A202C;
+    background-color: #FFFFFF;
+}
+
+.accordion-custom .accordion-button:not(.collapsed) {
+    background-color: #1A365D !important;
+    color: #FFFFFF !important;
+    font-weight: 600;
+}
+
+.accordion-custom .accordion-button:not(.collapsed)::after {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-custom .accordion-button:hover {
+    background-color: #975A16 !important;
+    color: #FFFFFF !important;
+}
+
+.accordion-custom .accordion-button:hover::after {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-custom .accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(151, 90, 22, 0.35);
+}
+
+/* 7. Personalização da Tabela */
+.table-custom {
+    --bs-table-color: #1A202C;
+    --bs-table-hover-bg: rgba(151, 90, 22, 0.14);
+    --bs-table-hover-color: #1A202C;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    border: 1px solid #4A5568 !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+}
+
+.table-custom caption {
+    color: #1A365D !important;
+    font-weight: 700;
+    font-size: 1.35rem;
+    padding-bottom: 0.75rem;
+    text-align: center;
+}
+
+.table-custom th,
+.table-custom td {
+    border: none !important;
+    border-right: 1px solid rgba(74, 85, 104, 0.35) !important;
+    border-bottom: 1px solid rgba(74, 85, 104, 0.35) !important;
+}
+
+/* Remove a linha da direita na última coluna e a linha de baixo na última linha */
+.table-custom th:last-child,
+.table-custom td:last-child {
+    border-right: none !important;
+}
+
+.table-custom tbody tr:last-child td {
+    border-bottom: none !important;
+}
+
+.table-custom thead th {
+    --bs-table-bg: #1A365D;
+    --bs-table-color: #FFFFFF;
+    background-color: #1A365D !important;
+    color: #FFFFFF !important;
+    border-bottom: 1px solid #4A5568 !important;
+    letter-spacing: 0.5px;
+}
+/* Arredonda diretamente os 4 cantos exteriores das células */
+.table-custom thead tr:first-child th:first-child {
+    border-top-left-radius: 11px !important;
+}
+
+.table-custom thead tr:first-child th:last-child {
+    border-top-right-radius: 11px !important;
+}
+
+.table-custom tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 11px !important;
+}
+
+.table-custom tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 11px !important;
+}
