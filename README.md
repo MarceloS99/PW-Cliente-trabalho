@@ -21,4 +21,4 @@ Turistas nacionais e estrangeiros, visitantes ocasionais de fim de semana e estu
 
 •⁠  ⁠*Framework:* Bootstrap
 •⁠  ⁠*Versão:* v5.3.3
-•⁠  ⁠*Método de integração:* CDN oficial (jsDelivr) com CSS e Bundle JS, mantendo ficheiro de personalização separado (⁠ css/bootstrap-custom.css ⁠) sem alterar o código-fonte da framework.
+•⁠  ⁠*Método de integração:* CDN oficial (jsDelivr) com CSS e Bundle JS, mantendo ficheiro de personalização separado (⁠bootstrap-custom.css⁠) sem alterar o código-fonte da framework.

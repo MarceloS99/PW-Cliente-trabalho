@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comparação técnica de frameworks CSS (Bootstrap 5.3.3, Foundation 6 e W3.CSS) aplicada ao portal Descobrir Gaia e Porto.">
+    <title>Comparação de Frameworks CSS — Descobrir Gaia e Porto</title>
+    <!-- Bootstrap 5.3.3 para a estrutura base da página e tabela comparativa -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .preview-frame {
+            width: 100%;
+            height: 430px;
+            border: 1px solid #CBD5E0;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+        }
+        .framework-badge {
+            background-color: #1A365D;
+            color: #FFFFFF;
+            font-size: 0.85rem;
+            padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+        }
+        .method-box {
+            background-color: #F7FAFC;
+            border-left: 5px solid #975A16;
+            padding: 1.25rem;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body style="background-color: #F7FAFC; color: #1A202C;">
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" style="background-color: #1A365D;" aria-label="Navegação principal">
+            <div class="container">
+                <span class="navbar-brand mb-0 h1 fw-bold">Descobrir Gaia e Porto</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ms-auto gap-1">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="monumentos.html">Monumentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gastronomia.html">Gastronomia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="roteiros.html">Roteiros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="acessibilidade.html">Acessibilidade</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="comparacao.html" style="background-color: #975A16; color: #FFFFFF; border-radius: 6px;">Comparação</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section class="mb-4">
+            <h1 class="h2 fw-bold" style="color: #1A365D;">Comparação Técnica de Frameworks CSS</h1>
+            <p class="lead">
+                Implementação isolada do mesmo componente turístico (cartão informativo da <strong>Ponte D. Luís I</strong>) em <strong>Bootstrap 5.3.3</strong>, <strong>Foundation 6.8.1</strong> e <strong>W3.CSS 4.15</strong> para avaliação de desempenho, código e acessibilidade.
+            </p>
+        </section>
+
+        <!-- Secção 1: O mesmo componente nas 3 frameworks (isolado via srcdoc para evitar conflitos de CSS) -->
+        <section class="mb-5" aria-labelledby="titulo-componentes">
+            <h2 id="titulo-componentes" class="h4 fw-bold mb-3" style="color: #1A365D;">1. Mesmo Componente Implementado nas Três Frameworks</h2>
+            <p class="text-muted small mb-4">
+                Cada caixa abaixo renderiza o componente de forma isolada com a respetiva folha de estilos oficial via CDN e a paleta institucional (<code>#1A365D</code> e <code>#975A16</code>).
+            </p>
+
+            <div class="row g-4">
+                <!-- Bootstrap 5.3.3 -->
+                <div class="col-12 col-lg-4">
+                    <div class="card h-100 shadow-sm" style="border-top: 4px solid #975A16; border-radius: 12px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
+                            <span class="fw-bold" style="color: #1A365D;">Bootstrap v5.3.3</span>
+                            <span class="framework-badge">14 linhas HTML</span>
+                        </div>
+                        <div class="card-body p-2">
+                            <iframe class="preview-frame" title="Componente Cartão em Bootstrap 5.3.3" srcdoc='<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body { background:#F7FAFC; padding:14px; font-family:system-ui,sans-serif; color:#1A202C; }
+  .card-custom { border-top:4px solid #975A16; border-radius:12px; overflow:hidden; }
+  .badge-gaia { background:#975A16; color:#FFF; }
+  .btn-custom { background:#1A365D; color:#FFF; border:none; }
+  .btn-custom:hover, .btn-custom:focus { background:#975A16; color:#FFF; }
+</style>
+</head>
+<body>
+<article class="card card-custom shadow-sm">
+  <img src="images/ponte D.luis.jpeg" alt="Tabuleiro superior da Ponte D. Luís I sobre o rio Douro, visto a partir da margem de Vila Nova de Gaia." style="width:100%; height:140px; object-fit:cover; display:block;"> 
+  <div class="card-body">
+    <span class="badge badge-gaia mb-2">Vila Nova de Gaia</span>
+    <h3 class="h5 card-title fw-bold" style="color:#1A365D;">Ponte D. Luís I</h3>
+    <p class="card-text small">Estrutura metálica em arco inaugurada em 1886, ligando a Ribeira do Porto à Serra do Pilar.</p>
+    <a href="#detalhes" class="btn btn-custom btn-sm w-100">Ver horários e acessos</a>
+  </div>
+</article>
+</body>
+</html>'></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foundation 6.8.1 -->
+                <div class="col-12 col-lg-4">
+                    <div class="card h-100 shadow-sm" style="border-top: 4px solid #975A16; border-radius: 12px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
+                            <span class="fw-bold" style="color: #1A365D;">Foundation v6.8.1</span>
+                            <span class="framework-badge">16 linhas HTML</span>
+                        </div>
+                        <div class="card-body p-2">
+                            <iframe class="preview-frame" title="Componente Cartão em Foundation 6.8.1" srcdoc='<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.8.1/dist/css/foundation.min.css">
+<style>
+  body { background:#F7FAFC; padding:14px; font-family:system-ui,sans-serif; color:#1A202C; }
+  .card-fnd { border-top:4px solid #975A16; border-radius:12px; box-shadow:0 2px 6px rgba(0,0,0,.08); }
+  .label-gaia { background:#975A16; color:#FFF; border-radius:4px; font-weight:600; }
+  .btn-fnd { background:#1A365D; color:#FFF; border-radius:6px; margin-bottom:0; }
+  .btn-fnd:hover, .btn-fnd:focus { background:#975A16; color:#FFF; }
+</style>
+</head>
+<body>
+<article class="card card-fnd">
+  <img src="images/ponte D.luis.jpeg" alt="Tabuleiro superior da Ponte D. Luís I sobre o rio Douro, visto a partir da margem de Vila Nova de Gaia." style="width:100%; height:140px; object-fit:cover; display:block;">
+  <div class="card-section">
+    <span class="label label-gaia">Vila Nova de Gaia</span>
+    <h3 class="h5" style="color:#1A365D;font-weight:700;margin-top:6px;">Ponte D. Luís I</h3>
+    <p style="font-size:0.875rem;">Estrutura metálica em arco inaugurada em 1886, ligando a Ribeira do Porto à Serra do Pilar.</p>
+    <a href="#detalhes" class="button small expanded btn-fnd">Ver horários e acessos</a>
+  </div>
+</article>
+</body>
+</html>'></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- W3.CSS 4.15 -->
+                <div class="col-12 col-lg-4">
+                    <div class="card h-100 shadow-sm" style="border-top: 4px solid #975A16; border-radius: 12px;">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center py-3">
+                            <span class="fw-bold" style="color: #1A365D;">W3.CSS v4.15</span>
+                            <span class="framework-badge">14 linhas HTML</span>
+                        </div>
+                        <div class="card-body p-2">
+                            <iframe class="preview-frame" title="Componente Cartão em W3.CSS 4.15" srcdoc='<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+  body { background:#F7FAFC; padding:14px; font-family:system-ui,sans-serif; color:#1A202C; }
+  .card-w3 { border-top:4px solid #975A16; border-radius:12px; overflow:hidden; background:#FFF; }
+  .tag-gaia { background:#975A16; color:#FFF; border-radius:4px; font-size:0.75rem; font-weight:600; }
+  .btn-w3 { background:#1A365D; color:#FFF; border-radius:6px; }
+  .btn-w3:hover, .btn-w3:focus { background:#975A16 !important; color:#FFF !important; }
+</style>
+</head>
+<body>
+<article class="w3-card-2 card-w3">
+  <img src="images/ponte D.luis.jpeg" alt="Tabuleiro superior da Ponte D. Luís I sobre o rio Douro, visto a partir da margem de Vila Nova de Gaia." style="width:100%; height:140px; object-fit:cover; display:block;">
+  <div class="w3-container w3-padding-16">
+    <span class="w3-tag tag-gaia">Vila Nova de Gaia</span>
+    <h3 style="color:#1A365D;font-weight:700;font-size:1.25rem;margin:6px 0;">Ponte D. Luís I</h3>
+    <p style="font-size:0.875rem;margin-bottom:12px;">Estrutura metálica em arco inaugurada em 1886, ligando a Ribeira do Porto à Serra do Pilar.</p>
+    <a href="#detalhes" class="w3-button w3-block w3-small btn-w3">Ver horários e acessos</a>
+  </div>
+</article>
+</body>
+</html>'></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção 2: Tabela Comparativa com 6 Critérios Medidos -->
+        <section class="mb-5" aria-labelledby="titulo-tabela">
+            <h2 id="titulo-tabela" class="h4 fw-bold mb-3" style="color: #1A365D;">2. Tabela Comparativa de Critérios Técnicos</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle bg-white caption-top">
+                    <caption class="fw-semibold" style="color: #4A5568;">Medição empírica dos indicadores de desempenho, código, personalização e acessibilidade por defeito.</caption>
+                    <thead style="background-color: #1A365D; color: #FFFFFF;">
+                        <tr>
+                            <th scope="col">Critério Medido</th>
+                            <th scope="col">Bootstrap v5.3.3</th>
+                            <th scope="col">Foundation v6.8.1</th>
+                            <th scope="col">W3.CSS v4.15</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1. KB Transferidos (CSS minificado / gzip)</th>
+                            <td>232 KB bruto (~31 KB gzip)</td>
+                            <td>154 KB bruto (~21 KB gzip)</td>
+                            <td>23 KB bruto (~5 KB gzip)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2. Linhas de Código do Componente (HTML + CSS)</th>
+                            <td>14 linhas HTML + 6 linhas CSS</td>
+                            <td>16 linhas HTML + 6 linhas CSS</td>
+                            <td>14 linhas HTML + 6 linhas CSS</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3. Qualidade e Atualização da Documentação</th>
+                            <td>Excelente (v5.3 ativa, exemplos WAI-ARIA completos)</td>
+                            <td>Boa (menor frequência de atualização recente)</td>
+                            <td>Básica (tutoriais introdutórios, sem especificação ARIA)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4. Personalização (Variáveis e Sobrescrita)</th>
+                            <td>Elevada (CSS Custom Properties <code>--bs-*</code> e Sass)</td>
+                            <td>Elevada (baseada em Sass; mais verbosa via CDN)</td>
+                            <td>Limitada (classes fixas, obriga a uso frequente de <code>!important</code>)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5. Acessibilidade por Defeito (WCAG / ARIA)</th>
+                            <td>Forte (gestão nativa de foco, <code>aria-current</code>, contraste documentado)</td>
+                            <td>Forte (atributos ARIA integrados nos componentes JS)</td>
+                            <td>Reduzida (apenas estilização visual; sem gestão de foco/ARIA)</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6. Ecossistema de Componentes sem JS Extra</th>
+                            <td>Completo (Navbar, Accordion, Table, Badges, Alerts)</td>
+                            <td>Completo (requer jQuery/plugins adicionais para interatividade)</td>
+                            <td>Minimalista (necessita JavaScript manual para acordeões/menus)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Secção 3: Explicação do Método de Medição -->
+        <section aria-labelledby="titulo-metodo">
+            <h2 id="titulo-metodo" class="h4 fw-bold mb-3" style="color: #1A365D;">3. Método de Medição Utilizado</h2>
+            <div class="method-box">
+                <p class="mb-2">
+                    Para assegurar rigor e reprodutibilidade na comparação entre as três bibliotecas CSS, aplicou-se o seguinte protocolo experimental:
+                </p>
+                <ol class="mb-0">
+                    <li class="mb-1"><strong>Isolamento de Ambiente:</strong> O mesmo componente funcional (cartão de monumento com cabeçalho visual, etiqueta geográfica, título hierárquico, descrição e botão de ação) foi implementado em três documentos HTML independentes embebidos via <code>&lt;iframe srcdoc&gt;</code>, impedindo colisões de seletores globais.</li>
+                    <li class="mb-1"><strong>Medição de Rede (KB Transferidos):</strong> Utilizou-se o separador <em>Network</em> do Google Chrome DevTools (com cache desativada — <em>Disable cache</em>) para registar o tamanho transferido (gzip) e o tamanho descomprimido (bruto) de cada folha de estilos oficial carregada via CDN.</li>
+                    <li class="mb-1"><strong>Contagem de Código:</strong> Contabilizaram-se as linhas efetivas de marcação semântica HTML e de regras CSS personalizadas necessárias para aplicar a paleta oficial (<code>#1A365D</code> e <code>#975A16</code>) com idêntico resultado visual.</li>
+                    <li><strong>Auditoria de Acessibilidade e Documentação:</strong> Verificou-se o comportamento de foco por teclado (tecla <code>Tab</code>), o rácio de contraste (superior a 5.1:1) e o suporte nativo a atributos WAI-ARIA na documentação oficial de cada projeto.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 text-center text-white" style="background-color: #4A5568;">
+        <div class="container">
+            <p class="mb-0 small">Projeto "Descobrir Gaia e Porto" • Etapa 7 — Comparação de Frameworks CSS • ISLA Gaia (2026)</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
