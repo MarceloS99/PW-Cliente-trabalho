@@ -3,22 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Roteiros turísticos sugeridos entre Vila Nova de Gaia e o Porto: itinerários de meio dia, dia inteiro e percursos ribeirinhos com tempos, distâncias e dicas de transporte.">
   <title>Descobrir Gaia e Porto - Roteiros Sugeridos</title>
 
   <!-- 1. CSS Oficial do Bootstrap v5.3.3 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-  <!-- 2. O vosso CSS original e o futuro ficheiro de personalização -->
+  <!-- 2. O vosso CSS original e o ficheiro de personalização -->
   <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="bootstrap-custom.css">
 </head>
 <body>
 
-  <!-- Cabecalho principal e navegacao global -->
+  <!-- Cabeçalho principal e navegação global -->
   <header>
-      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" aria-label="Navegação principal">
           <div class="container">
-              <a class="navbar-brand fw-bold" href="index.html">Descobrir Gaia e Porto</a>
+              <span class="navbar-brand fw-bold mb-0">Descobrir Gaia e Porto</span>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Alternar navegação">
                   <span class="navbar-toggler-icon"></span>
               </button>
@@ -37,71 +38,153 @@
       </nav>
   </header>
 
-  <main>
-
-    
-    <section>
-      <h2>Planeie a sua Visita</h2>
-      <p>
-        Para aproveitar ao máximo o seu tempo entre Vila Nova de Gaia e o Porto, preparámos
-        itinerários práticos pensados para diferentes durações e interesses. <br>Descubra os
-        melhores percursos pedestres e as vistas mais emblemáticas sobre o Rio Douro.
+  <main class="container my-4">
+    <!-- Introdução -->
+    <section class="mb-4">
+      <h1 class="h2 fw-bold mb-2">Roteiros e Itinerários Sugeridos</h1>
+      <p class="lead">
+        Para aproveitar ao máximo o seu tempo entre Vila Nova de Gaia e o Porto, preparámos três itinerários práticos pensados para diferentes durações, ritmos de caminhada e interesses culturais.
+      </p>
+      <p class="text-muted small mb-0">
+        Última atualização dos itinerários: <time datetime="2026-11-21">21 de Novembro de 2026</time>.
       </p>
     </section>
 
-    
-    <article>
-      <h2>Roteiro 1: O Coração Histórico do Porto (1 Dia)</h2>
-      <p>
-        Um percurso dedicado a quem visita a cidade pela primeira vez e pretende conhecer
-        os monumentos mais emblemáticos do centro histórico classificado pela UNESCO.
-      </p>
-      
-      <h3>Etapas do Itinerário:</h3>
-      <ol>
-        <li><strong>Manhã:</strong> Início na Avenida dos Aliados e subida à Torre dos Clérigos para uma vista panorâmica de 360 graus.</li>
-        <li><strong>Meio-dia:</strong> Passagem pela Estação de São Bento para apreciar os azulejos históricos e almoço tradicional na Baixa.</li>
-        <li><strong>Tarde:</strong> Visita à Sé Catedral do Porto e descida pelas ruelas pitorescas até à Praça da Ribeira.</li>
-        <li><strong>Fim de tarde:</strong> Travessia a pé pelo tabuleiro inferior da Ponte de Luís I.</li>
-      </ol>
-    </article>
-    
-    <article>
-      <h3>Roteiro pelo Centro Histórico:</h3>
-      <p> Duração estimada: <time datetime="PT3H">3 horas</time></p>
-      <p>Última atualização do itinerário: <time datetime="2026-10-30">30 de Outubro de 2026</time></p>
-    </article>
+    <!-- Grelha dos 3 Roteiros -->
+    <section class="mb-5" aria-labelledby="titulo-itinerarios">
+      <h2 id="titulo-itinerarios" class="h4 fw-bold mb-4">Percursos Recomendados</h2>
 
-    
-    <article>
-      <h2>Roteiro 2: Ribeira, Vinho e Encostas de Gaia (Meio Dia)</h2>
-      <p>
-        Este itinerário foca-se na margem sul do Douro, combinando o património do vinho do Porto com a beleza das encostas de Vila Nova de Gaia. <br>Ideal para quem deseja uma experiência cultural e sensorial, apreciando a
-        tradição marítima e o melhor pôr do sol da região.
-      </p>
-      
-      <h3>Etapas do Itinerário:</h3>
-      <ul>
-        <li><strong>Passeio ribeirinho:</strong> Caminhada pelo Cais de Gaia com vista frontal para a Ribeira do Porto.</li>
-        <li><strong>Visita às Caves:</strong> Prova orientada de Vinho do Porto numa cave histórica centenária.</li>
-        <li><strong>Subida panorâmica:</strong> Viagem no Teleférico de Gaia ou subida pedonal até ao Jardim do Morro.</li>
-        <li><strong>Pôr do sol:</strong> Contemplação do entardecer junto ao Mosteiro da Serra do Pilar.</li>
-      </ul>
-    </article>
+      <div class="row g-4">
+        <!-- Roteiro 1 -->
+        <div class="col-12 col-lg-4">
+          <article class="p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
+            <div class="mb-2">
+              <span class="badge badge-porto">Porto</span>
+              <span class="badge badge-gaia">Dia Inteiro</span>
+            </div>
+            <h3 class="h5 fw-bold">Roteiro 1: O Coração Histórico do Porto</h3>
+            <p class="small text-muted mb-2">
+              <strong>Duração estimada:</strong> <time datetime="PT6H">6 horas</time> • <strong>Distância:</strong> ~4,5 km
+            </p>
+            <p>
+              Percurso dedicado a quem visita a cidade pela primeira vez e pretende conhecer os monumentos mais emblemáticos do centro histórico classificado pela UNESCO.
+            </p>
+            
+            <h4 class="h6 fw-bold mt-2">Etapas do Itinerário:</h4>
+            <ol class="flex-grow-1 ps-3">
+              <li class="mb-1"><strong>Manhã (09h30):</strong> Início na Avenida dos Aliados e subida à Torre dos Clérigos para uma vista panorâmica de 360 graus.</li>
+              <li class="mb-1"><strong>Meio-dia (12h00):</strong> Passagem pelo átrio da Estação de São Bento para apreciar os painéis de azulejos históricos e almoço tradicional na Baixa.</li>
+              <li class="mb-1"><strong>Tarde (14h30):</strong> Visita à Sé Catedral do Porto e descida pelas escadas e ruelas medievais até à Praça da Ribeira.</li>
+              <li><strong>Fim de tarde (17h30):</strong> Travessia a pé pelo tabuleiro inferior da Ponte D. Luís I rumo ao Cais de Gaia.</li>
+            </ol>
+          </article>
+        </div>
 
-    
-    <section>
-      <h2>Conselhos Práticos para os Percursos</h2>
-      <ul>
-        <li><strong>Calçado confortável:</strong> As duas cidades têm encostas íngremes e calçada tradicional portuguesa.</li>
-        <li><strong>Transportes públicos:</strong> Utilize o Metro do Porto (Linha Amarela) para ligar rapidamente o Jardim do Morro e a Baixa do Porto.</li>
-        <li><strong>Planeamento prévio:</strong> Recomenda-se a reserva antecipada para visitas guiadas às caves e monumentos principais.</li>
-      </ul>
+        <!-- Roteiro 2 -->
+        <div class="col-12 col-lg-4">
+          <article class="p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
+            <div class="mb-2">
+              <span class="badge badge-gaia">Vila Nova de Gaia</span>
+              <span class="badge badge-porto">Meio Dia</span>
+            </div>
+            <h3 class="h5 fw-bold">Roteiro 2: Ribeira, Vinho e Encostas de Gaia</h3>
+            <p class="small text-muted mb-2">
+              <strong>Duração estimada:</strong> <time datetime="PT3H30M">3h30</time> • <strong>Distância:</strong> ~2,8 km
+            </p>
+            <p>
+              Focado na margem sul do Douro, combina o património vitivinícola das caves centenárias com os miradouros mais emblemáticos de Vila Nova de Gaia.
+            </p>
+            
+            <h4 class="h6 fw-bold mt-2">Etapas do Itinerário:</h4>
+            <ol class="flex-grow-1 ps-3">
+              <li class="mb-1"><strong>Passeio ribeirinho (15h00):</strong> Caminhada plana pelo Cais de Gaia com vista frontal para a casaria da Ribeira do Porto.</li>
+              <li class="mb-1"><strong>Visita às Caves (16h00):</strong> Visita guiada e prova comentada de Vinho do Porto numa cave histórica.</li>
+              <li class="mb-1"><strong>Subida panorâmica (17h30):</strong> Viagem no Teleférico de Gaia até ao Jardim do Morro sem esforço físico.</li>
+              <li><strong>Pôr do sol (18h15):</strong> Contemplação do entardecer no adro do Mosteiro da Serra do Pilar.</li>
+            </ol>
+          </article>
+        </div>
+
+        <!-- Roteiro 3 -->
+        <div class="col-12 col-lg-4">
+          <article class="p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
+            <div class="mb-2">
+              <span class="badge badge-porto">Foz &amp; Afurada</span>
+              <span class="badge badge-gaia">Percurso Plano</span>
+            </div>
+            <h3 class="h5 fw-bold">Roteiro 3: Estuário do Douro e Comunidade Piscatória</h3>
+            <p class="small text-muted mb-2">
+              <strong>Duração estimada:</strong> <time datetime="PT3H">3 horas</time> • <strong>Distância:</strong> ~4,0 km
+            </p>
+            <p>
+              Itinerário acessível ao longo da marginal plana do estuário, ligando a tradição piscatória da Afurada à Reserva Natural Local do Estuário do Douro.
+            </p>
+            
+            <h4 class="h6 fw-bold mt-2">Etapas do Itinerário:</h4>
+            <ol class="flex-grow-1 ps-3">
+              <li class="mb-1"><strong>Partida (10h00):</strong> Início no Cais de Gaia seguindo a ciclovia e passeio marginal junto ao rio.</li>
+              <li class="mb-1"><strong>Afurada (11h00):</strong> Paragem no lavadouro comunitário tradicional e ruas típicas da aldeia piscatória.</li>
+              <li class="mb-1"><strong>Estuário do Douro (12h00):</strong> Observação de aves nos passadiços planos junto ao Cabedelo.</li>
+              <li><strong>Almoço (13h00):</strong> Peixe fresco grelhado no carvão nos restaurantes típicos da Afurada.</li>
+            </ol>
+          </article>
+        </div>
+      </div>
     </section>
 
-  </main>
+    <!-- Tabela Resumo dos Roteiros -->
+    <section class="mb-5" aria-labelledby="titulo-resumo-roteiros">
+      <h2 id="titulo-resumo-roteiros" class="h4 fw-bold mb-3">Comparação Rápida dos Itinerários</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered caption-top align-middle table-custom">
+          <caption>Resumo técnico de duração, dificuldade, declive e transporte de apoio por roteiro</caption>
+          <thead>
+            <tr>
+              <th scope="col">Roteiro</th>
+              <th scope="col">Duração</th>
+              <th scope="col">Dificuldade / Declive</th>
+              <th scope="col">Transporte Recomendado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1. Coração Histórico do Porto</th>
+              <td>6 horas</td>
+              <td>Média (calçada portuguesa e descidas acentuadas)</td>
+              <td>Metro (Estação Aliados / São Bento) e Funicular dos Guindais</td>
+            </tr>
+            <tr>
+              <th scope="row">2. Ribeira, Vinho e Encostas de Gaia</th>
+              <td>3h30</td>
+              <td>Baixa a Média (subida compensada pelo Teleférico)</td>
+              <td>Teleférico de Gaia e Metro Linha D (Jardim do Morro)</td>
+            </tr>
+            <tr>
+              <th scope="row">3. Estuário do Douro e Afurada</th>
+              <td>3 horas</td>
+              <td>Baixa (percurso totalmente plano e acessível)</td>
+              <td>Autocarro STCP (Linha 902 / 906) ou Táxi/TVDE</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
-  
+    <!-- Conselhos Práticos -->
+    <section aria-labelledby="titulo-conselhos">
+      <h2 id="titulo-conselhos" class="h4 fw-bold mb-3">Conselhos Práticos para os Percursos</h2>
+      <div class="alert alert-custom mb-0" role="note">
+        <ul class="mb-0">
+          <li><strong>Calçado confortável:</strong> Os percursos no centro histórico incluem calçada tradicional em granito e inclinações acentuadas; evite calçado de sola lisa.</li>
+          <li><strong>Transportes públicos:</strong> Utilize o Metro do Porto (Linha D — Amarela) para vencer rapidamente o desnível entre o Jardim do Morro e a Baixa do Porto.</li>
+          <li><strong>Alternativas sem degraus:</strong> O Roteiro 3 (Cais de Gaia – Afurada – Cabedelo) é integralmente plano e recomendado para carrinhos de bebé e cadeiras de rodas.</li>
+          <li><strong>Planeamento prévio:</strong> Recomenda-se a reserva antecipada para visitas guiadas às caves de Vinho do Porto e para a subida à Torre dos Clérigos.</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>S
+
   <footer>
         <address>
             Projeto desenvolvido por Marcelo Sousa, Diogo Cruz, Eurico Cunha e João Teixeira.<br>

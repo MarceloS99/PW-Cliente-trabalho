@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gastronomia tradicional do Porto e Vila Nova de Gaia: história da Francesinha, provas de Vinho do Porto nas caves de Gaia e roteiro de sabores regionais.">
   <title>Descobrir Gaia e Porto - Gastronomia</title>
 
   <!-- 1. CSS Oficial do Bootstrap v5.3.3 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-  <!-- 2. O vosso CSS original e o futuro ficheiro de personalização -->
+  <!-- 2. O vosso CSS original e o ficheiro de personalização -->
   <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="bootstrap-custom.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" aria-label="Navegação principal">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">Descobrir Gaia e Porto</a>
+                <span class="navbar-brand fw-bold mb-0">Descobrir Gaia e Porto</span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Alternar navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -35,35 +36,118 @@
         </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Especialidades</h2>
-
-            <article>
-                <h3>Francesinha</h3>
-                <figure>
-                    <img src="images/francesinha.jpg" alt="Francesinha servida no prato com molho picante">
-                    <figcaption>Prato tradicional da região</figcaption>
-                </figure>
-                <p>Prato típico servido na zona norte.</p>
-            </article>
-
-            <article>
-                <h3>Vinho do Porto</h3>
-                <figure>
-                    <img src="images/vinho-porto.jpg" alt="Copos com Vinho do Porto ao lado de barricas de madeira">
-                    <figcaption>Vinho tradicional nas caves de Gaia</figcaption>
-                </figure>
-                <p>Vinho produzido na região demarcada do Douro.</p>
-            </article>
+    <main class="container my-4">
+        <section class="mb-4">
+            <h1 class="h2 fw-bold mb-2">Sabores e Tradição Gastronómica</h1>
+            <p class="lead">
+                A identidade do Porto e de Vila Nova de Gaia expressa-se à mesa através de receitas robustas da cozinha tradicional nortenha e do envelhecimento secular do Vinho do Porto nas caves da margem sul.
+            </p>
         </section>
 
-        <section>
-            <h2>Sugestões</h2>
-            <ul>
-                <li>Experimentar a gastronomia local.</li>
-                <li>Visitar as caves tradicionais.</li>
-            </ul>
+        <section class="mb-5" aria-labelledby="titulo-especialidades">
+            <h2 id="titulo-especialidades" class="h4 fw-bold mb-4">Especialidades Emblemáticas</h2>
+
+            <div class="row g-4">
+                <!-- Especialidade 1: Francesinha -->
+                <div class="col-12 col-lg-6">
+                    <article class="p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge badge-porto">Porto</span>
+                            <span class="badge badge-gaia">Prato Típico</span>
+                        </div>
+                        <h3 class="h5 fw-bold">Francesinha</h3>
+                        <figure>
+                            <img src="images/francesinha.jpg" class="img-fluid rounded" alt="Francesinha tradicional do Porto servida em prato fundo com molho quente, queijo derretido e batatas fritas.">
+                            <figcaption class="mt-2 text-muted small">Francesinha tradicional servida com molho artesanal e batatas fritas estaladiças.</figcaption>
+                        </figure>
+                        <p class="flex-grow-1">
+                            Criada na década de 1950 como uma adaptação portuense do <em>croque-monsieur</em> francês, a Francesinha tornou-se o prato mais icónico da cidade. É composta por fatias de pão de forma recheadas com bife de novilho, linguiça, salsicha fresca e fiambre, coberta com queijo derretido e banhada num molho quente ligeiramente picante à base de tomate, cerveja e especiarias.
+                        </p>
+                        <ul class="small text-muted mb-0 ps-3">
+                            <li><strong>Acompanhamento clássico:</strong> Batatas fritas e ovo estrelado no topo.</li>
+                            <li><strong>Harmonização sugerida:</strong> Cerveja fina de pressão bem gelada.</li>
+                        </ul>
+                    </article>
+                </div>
+
+                <!-- Especialidade 2: Vinho do Porto -->
+                <div class="col-12 col-lg-6">
+                    <article class="p-4 bg-white rounded shadow-sm h-100 d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge badge-gaia">Vila Nova de Gaia</span>
+                            <span class="badge badge-porto">Região Demarcada do Douro</span>
+                        </div>
+                        <h3 class="h5 fw-bold">Vinho do Porto</h3>
+                        <figure>
+                            <img src="images/vinho-porto.jpg" class="img-fluid rounded" alt="Copos com Vinho do Porto ao lado de barricas de carvalho nas caves tradicionais de Vila Nova de Gaia.">
+                            <figcaption class="mt-2 text-muted small">Envelhecimento em cascos de carvalho nas históricas caves de Vila Nova de Gaia.</figcaption>
+                        </figure>
+                        <p class="flex-grow-1">
+                            Produzido exclusivamente a partir de castas autóctones da Região Demarcada do Douro — a mais antiga região vitivinícola regulamentada do mundo (1756) —, este vinho generoso é transportado para Vila Nova de Gaia, onde o clima atlântico húmido cria as condições ideais para o seu estágio em cascos e balseiros de carvalho.
+                        </p>
+                        <ul class="small text-muted mb-0 ps-3">
+                            <li><strong>Estilos principais:</strong> Branco (aperitivo), Ruby (frutado e jovem) e Tawny (envelhecido em madeira).</li>
+                            <li><strong>Experiência:</strong> Visitas guiadas com prova comentada nas caves do Cais de Gaia.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção de Outras Especialidades e Harmonizações -->
+        <section class="mb-5" aria-labelledby="titulo-pratos">
+            <h2 id="titulo-pratos" class="h4 fw-bold mb-3">Outros Pratos e Iguarias a Provar</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-bordered caption-top align-middle table-custom">
+                    <caption>Guia rápido de especialidades gastronómicas do Porto e Vila Nova de Gaia</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Especialidade</th>
+                            <th scope="col">Origem</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Sugestão de Consumo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Tripas à Moda do Porto</th>
+                            <td>Porto</td>
+                            <td>Prato histórico confecionado com dobrada, feijão branco, enchidos tradicionais e cominhos.</td>
+                            <td>Almoço tradicional (especialmente às quintas-feiras).</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Peixe Grelhado da Afurada</th>
+                            <td>Vila Nova de Gaia</td>
+                            <td>Sardinha, robalo ou dourada assados no carvão em grelhadores de rua junto à comunidade piscatória.</td>
+                            <td>Almoço ou jantar junto à marina da Afurada.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bifana à Moda do Porto</th>
+                            <td>Porto</td>
+                            <td>Fêveras finas de porco cozinhadas lentamente num molho apurado de cerveja, alho e malagueta, servidas em pão crocante.</td>
+                            <td>Lanche rápido ou petisco a meio da tarde.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Nata e Doçaria Conventual</th>
+                            <td>Porto e Gaia</td>
+                            <td>Pastéis de nata estaladiços, jesuítas e pão de ló húmido produzidos em confeitarias centenárias.</td>
+                            <td>Acompanhado com café expresso ou Vinho do Porto Tawny 10 Anos.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Secção de Sugestões Práticas -->
+        <section aria-labelledby="titulo-sugestoes">
+            <h2 id="titulo-sugestoes" class="h4 fw-bold mb-3">Sugestões para a Experiência Gastronómica</h2>
+            <div class="alert alert-custom mb-0" role="note">
+                <ul class="mb-0">
+                    <li><strong>Roteiro das Caves em Gaia:</strong> Percorra o Cais de Gaia e as ruas interiores (como a Rua de Serpa Pinto e a Rua do Choupelo) para comparar diferentes casas centenárias de Vinho do Porto.</li>
+                    <li><strong>Horários de Refeição:</strong> Os restaurantes tradicionais de Francesinha têm elevada procura entre as 12h30–14h00 e as 19h30–21h30; chegue cedo ou reserve mesa.</li>
+                    <li><strong>Opções Alternativas:</strong> Muitas casas portuenses já disponibilizam versões vegetarianas da Francesinha (com legumes grelhados, cogumelos e molho de base vegetal) mediante pedido.</li>
+                </ul>
+            </div>
         </section>
     </main>
 

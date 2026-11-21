@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Monumentos históricos do Porto e Vila Nova de Gaia: Mosteiro da Serra do Pilar, Torre dos Clérigos e Ponte D. Luís I, com horários, preços e dicas de visita.">
   <title>Descobrir Gaia e Porto - Monumentos</title>
 
   <!-- 1. CSS Oficial do Bootstrap v5.3.3 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-  <!-- 2. O vosso CSS original e o futuro ficheiro de personalização -->
+  <!-- 2. O vosso CSS original e o ficheiro de personalização -->
   <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="bootstrap-custom.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" aria-label="Navegação principal">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">Descobrir Gaia e Porto</a>
+                <span class="navbar-brand fw-bold mb-0">Descobrir Gaia e Porto</span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Alternar navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -36,80 +37,132 @@
     </header>
 
     <main class="container my-4">
-        <section class="mb-5">
-            <h2 class="mb-4 text-center">Locais</h2>
+        <section class="mb-4">
+            <h1 class="h2 fw-bold mb-2">Património Monumental de Gaia e Porto</h1>
+            <p class="lead">
+                Conheça três marcos arquitetónicos que definem a paisagem histórica das duas margens do rio Douro, classificados como Património Mundial pela UNESCO.
+            </p>
+        </section>
+
+        <section class="mb-5" aria-labelledby="titulo-locais">
+            <h2 id="titulo-locais" class="h4 fw-bold mb-4">Monumentos em Destaque</h2>
             
-            <!-- Grelha Bootstrap aplicada diretamente aos 3 monumentos originais -->
+            <!-- Grelha Bootstrap aplicada aos 3 monumentos com informação histórica e prática -->
             <div class="row g-4">
                 <div class="col-12 col-md-6 col-lg-4">
-                    <article class="p-3 bg-white rounded shadow-sm h-100">
-                        <h3>Mosteiro da Serra do Pilar</h3>
+                    <article class="p-3 bg-white rounded shadow-sm h-100 d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge badge-gaia">Vila Nova de Gaia</span>
+                            <span class="badge badge-porto">Século XVI</span>
+                        </div>
+                        <h3 class="h5 fw-bold">Mosteiro da Serra do Pilar</h3>
                         <figure>
-                            <img src="images/serra-pilar.jpg" class="img-fluid rounded" alt="Mosteiro da Serra do Pilar no topo da colina com vista sobre o rio">
-                            <figcaption class="mt-2 text-muted small">Mosteiro da Serra do Pilar</figcaption>
+                            <img src="images/serra-pilar.jpg" class="img-fluid rounded" alt="Mosteiro da Serra do Pilar no topo da escarpa de Vila Nova de Gaia com vista panorâmica sobre o rio Douro.">
+                            <figcaption class="mt-2 text-muted small">Igreja circular e claustro renascentista no topo da escarpa de Gaia.</figcaption>
                         </figure>
-                        <p>Edifício do século XVI em Vila Nova de Gaia.</p>
+                        <p class="flex-grow-1">
+                            Edificado entre os séculos XVI e XVII, destaca-se pela igreja e claustro de planta perfeitamente circular — exemplares únicos na arquitetura religiosa em Portugal. O seu adro oferece a vista panorâmica mais emblemática sobre a Ribeira do Porto.
+                        </p>
+                        <ul class="small text-muted mb-0 ps-3">
+                            <li><strong>Acesso:</strong> Metro Linha D (Estação Jardim do Morro).</li>
+                            <li><strong>Destaque:</strong> Subida ao zimbório e miradouro ao pôr do sol.</li>
+                        </ul>
                     </article>
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-4">
-                    <article class="p-3 bg-white rounded shadow-sm h-100">
-                        <h3>Torre dos Clérigos</h3>
+                    <article class="p-3 bg-white rounded shadow-sm h-100 d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge badge-porto">Porto</span>
+                            <span class="badge badge-gaia">Século XVIII</span>
+                        </div>
+                        <h3 class="h5 fw-bold">Torre dos Clérigos</h3>
                         <figure>
-                            <img src="images/torre-clerigos.jpg" class="img-fluid rounded" alt="Torre sineira dos Clérigos em estilo barroco vista da rua">
-                            <figcaption class="mt-2 text-muted small">Torre dos Clérigos</figcaption>
+                            <img src="images/torre-clerigos.jpg" class="img-fluid rounded" alt="Fachada e torre sineira barroca da Igreja dos Clérigos no centro histórico do Porto.">
+                            <figcaption class="mt-2 text-muted small">Torre sineira em granito projetada pelo arquiteto Nicolau Nasoni.</figcaption>
                         </figure>
-                        <p>Torre barroca do século XVIII no Porto.</p>
+                        <p class="flex-grow-1">
+                            Obra-prima do estilo barroco concluída em 1763 pelo arquiteto italiano Nicolau Nasoni. Com mais de 75 metros de altura e 225 degraus em espiral, proporciona uma vista de 360 graus sobre todo o centro histórico do Porto e o estuário do Douro.
+                        </p>
+                        <ul class="small text-muted mb-0 ps-3">
+                            <li><strong>Acesso:</strong> Rua de São Filipe de Nery (junto aos Aliados).</li>
+                            <li><strong>Destaque:</strong> Museu da Irmandade e visita noturna guiada.</li>
+                        </ul>
                     </article>
                 </div>
 
                 <div class="col-12 col-md-12 col-lg-4">
-                    <article class="p-3 bg-white rounded shadow-sm h-100">
-                        <h3>Ponte D. Luís I</h3>
+                    <article class="p-3 bg-white rounded shadow-sm h-100 d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge badge-porto">Porto</span>
+                            <span class="badge badge-gaia">Gaia</span>
+                        </div>
+                        <h3 class="h5 fw-bold">Ponte D. Luís I</h3>
                         <figure>
-                            <img src="images/ponte D.luis.jpeg" class="img-fluid rounded" alt="Vista panorâmica da Ponte Luís I a ligar o Porto a Vila Nova de Gaia">
-                            <figcaption class="mt-2 text-muted small">Ponte D. Luís I: travessia icónica sobre o Rio Douro unindo as duas cidades.</figcaption>
+                            <img src="images/ponte D.luis.jpeg" class="img-fluid rounded" alt="Tabuleiro superior e inferior da Ponte D. Luís I sobre o rio Douro unindo o Porto a Vila Nova de Gaia.">
+                            <figcaption class="mt-2 text-muted small">Estrutura metálica em arco inaugurada em 1886 sobre o rio Douro.</figcaption>
                         </figure>
-                        <p>Ponte icónica sobre o Rio Douro, conectando o Porto a Vila Nova de Gaia.</p>
+                        <p class="flex-grow-1">
+                            Projetada pelo engenheiro Théophile Seyrig (discípulo de Gustave Eiffel) e inaugurada em 1886, possui dois tabuleiros metálicos sobrepostos: o superior (60 m de altura) destinado ao Metro e peões, e o inferior dedicado ao trânsito rodoviário e pedonal.
+                        </p>
+                        <ul class="small text-muted mb-0 ps-3">
+                            <li><strong>Acesso:</strong> Tabuleiro superior (Sé / Jardim do Morro) ou inferior (Ribeira / Cais de Gaia).</li>
+                            <li><strong>Destaque:</strong> Travessia pedonal gratuita com vista sobre as caves.</li>
+                        </ul>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2 class="mb-3">Informações</h2>
+        <section class="mb-5" aria-labelledby="titulo-info">
+            <h2 id="titulo-info" class="h4 fw-bold mb-3">Horários, Bilhetes e Acessibilidade</h2>
             <div class="table-responsive">
                 <table class="table table-striped table-hover table-bordered caption-top align-middle table-custom">
-                    <caption>Tabela de locais, horários e preços</caption>
+                    <caption>Tabela comparativa de localização, horários de funcionamento, preçário e condições de acesso</caption>
                     <thead>
                         <tr>
                             <th scope="col">Monumento</th>
                             <th scope="col">Localização</th>
                             <th scope="col">Horário</th>
                             <th scope="col">Preço</th>
+                            <th scope="col">Acessibilidade Física</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Serra do Pilar</td>
-                            <td>Gaia</td>
-                            <td>10h00 - 18h30</td>
-                            <td>4,00 €</td>
+                            <th scope="row">Mosteiro da Serra do Pilar</th>
+                            <td>Largo de Aviz, Vila Nova de Gaia</td>
+                            <td>10h00 – 18h30 (encerra à segunda)</td>
+                            <td>4,00 € (Miradouro exterior gratuito)</td>
+                            <td>Miradouro exterior nivelado; acesso ao claustro com degraus.</td>
                         </tr>
                         <tr>
-                            <td>Torre dos Clérigos</td>
-                            <td>Porto</td>
-                            <td>09h00 - 19h00</td>
-                            <td>8,00 €</td>
+                            <th scope="row">Torre dos Clérigos</th>
+                            <td>Rua de São Filipe de Nery, Porto</td>
+                            <td>09h00 – 19h00 (todos os dias)</td>
+                            <td>8,00 € (Entrada gratuita até aos 10 anos)</td>
+                            <td>Igreja acessível; subida à torre exclusivamente por 225 degraus.</td>
                         </tr>
                         <tr>
-                            <td>Ponte D. Luís I</td>
-                            <td>Porto</td>
-                            <td>24h</td>
-                            <td>Grátis</td>
+                            <th scope="row">Ponte D. Luís I</th>
+                            <td>Ribeira (Porto) / Cais de Gaia</td>
+                            <td>24 horas (acesso permanente)</td>
+                            <td>Gratuito</td>
+                            <td>Passeios pedonais planos em ambos os tabuleiros; ligação por Metro (Linha D).</td>
                         </tr>
                     </tbody>
                 </table>
+            </div>
+        </section>
+
+        <section aria-labelledby="titulo-dicas">
+            <h2 id="titulo-dicas" class="h4 fw-bold mb-3">Conselhos Úteis para a Visita</h2>
+            <div class="alert alert-custom mb-0" role="note">
+                <ul class="mb-0">
+                    <li><strong>Bilhetes Combinados:</strong> Na Torre dos Clérigos, recomenda-se a compra antecipada online para evitar filas nas horas de maior afluência (entre as 11h00 e as 16h00).</li>
+                    <li><strong>Segurança na Ponte D. Luís I:</strong> No tabuleiro superior, circule sempre pelos passeios laterais e respeite a sinalização sonora e luminosa da via do Metro do Porto.</li>
+                    <li><strong>Descontos:</strong> Estudantes, seniores (+65 anos) e portadores do Cartão Porto.CARD usufruem de reduções na entrada do Mosteiro da Serra do Pilar e da Torre dos Clérigos.</li>
+                </ul>
             </div>
         </section>
     </main>

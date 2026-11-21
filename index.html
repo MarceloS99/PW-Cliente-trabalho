@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Descobrir Gaia e Porto</title>
+  <meta name="description" content="Guia turístico acessível sobre património, cultura, roteiros e gastronomia entre Vila Nova de Gaia e o Porto.">
+  <title>Descobrir Gaia e Porto — Guia Turístico e Cultural</title>
 
   <!-- 1. CSS Oficial do Bootstrap v5.3.3 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-  <!-- 2. O vosso CSS original e o futuro ficheiro de personalização -->
+  <!-- 2. O vosso CSS original e o ficheiro de personalização -->
   <link rel="stylesheet" href="estilos.css">
   <link rel="stylesheet" href="bootstrap-custom.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom" aria-label="Navegação principal">
             <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">Descobrir Gaia e Porto</a>
+                <span class="navbar-brand fw-bold mb-0">Descobrir Gaia e Porto</span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Alternar navegação">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -38,78 +39,114 @@
     <main class="container my-4">
         <div class="alert alert-custom d-flex align-items-center mb-4" role="alert">
             <div>
-            <strong>Dica de Visita:</strong> Utilize o Cartão Andante ou o passe turístico para viajar facilmente entre o Porto e Vila Nova de Gaia de metro, autocarro ou comboio.
+                <strong>Dica de Visita:</strong> Utilize o <strong>Cartão Andante</strong> (título ocasional ou passe 24h/72h) para viajar facilmente entre o Porto e Vila Nova de Gaia de metro (Linha D), autocarro STCP, comboio urbano ou teleférico.
             </div>
         </div>
-        <section>
-            <h2>Sobre o Guia</h2>
-            <p>Guia informativo sobre património, cultura e gastronomia entre Vila Nova de Gaia e o Porto.</p>
+
+        <!-- Secção de Boas-Vindas e Enquadramento -->
+        <section class="mb-4">
+            <h1 class="h2 fw-bold mb-3">Duas Margens, Um Património Único</h1>
+            <p class="lead">
+                Separadas pelas águas do rio Douro e unidas por seis pontes emblemáticas, as cidades do <strong>Porto</strong> e de <strong>Vila Nova de Gaia</strong> formam um destino cultural, arquitetónico e gastronómico classificado como Património Mundial pela UNESCO desde 1996.
+            </p>
+            <p>
+                Este guia foi concebido para ajudar residentes e visitantes a planear percursos a pé ou em transporte público, reunindo horários atualizados, sugestões gastronómicas autênticas e informação sobre acessibilidade física e digital.
+            </p>
             <ul>
-                <li>Rotas culturais e históricas</li>
-                <li>Horários e informações úteis de visita</li>
-                <li>Gastronomia típica e provas de vinho</li>
+                <li><strong>Património Histórico:</strong> Monumentos seculares, igrejas barrocas e miradouros sobre o vale do Douro.</li>
+                <li><strong>Cultura Vitivinícola:</strong> As históricas caves de Vinho do Porto em Gaia e a tradição dos barcos rabelos.</li>
+                <li><strong>Gastronomia Regional:</strong> Pratos típicos portuenses, petiscos tradicionais e doçaria conventual.</li>
+                <li><strong>Planeamento Prático:</strong> Roteiros organizados por duração, transportes e contactos de apoio ao turista.</li>
             </ul>
         </section>
-        <section>
-            <h2>Ponto turístico</h2>
-            <figure>
-                <img src="images/rio-douro.jpg" class="img-fluid rounded" alt="Vista panorâmica do Rio Douro com barcos rabelo ancorados e a Ponte Luís I">
-                <figcaption>Zona da Ribeira entre Vila Nova de Gaia e Porto.</figcaption>
+
+        <!-- Secção Visual Principal -->
+        <section class="mb-5">
+            <h2 class="h4 fw-bold mb-3">Cartão-Postal do Rio Douro</h2>
+            <figure class="mb-0">
+                <img src="images/rio-douro.jpg" class="img-fluid rounded shadow-sm" alt="Vista panorâmica do Rio Douro com barcos rabelo ancorados junto ao Cais de Gaia e a Ponte Luís I ao fundo.">
+                <figcaption class="mt-2 text-muted small">Zona entre Vila Nova de Gaia e a Ribeira do Porto, com os tradicionais barcos rabelos em primeiro plano.</figcaption>
             </figure>
         </section>
-        <section>
-            <h2>Explorar o Guia</h2>
-            <ul>
-                <li>Consulte a lista e horários em <a href="monumentos.html">Monumentos</a>.</li>
-                <li>Conheça os pratos tradicionais em <a href="gastronomia.html">Gastronomia</a>.</li>
-            </ul>
-        </section>
-        <section class="row g-4 mt-2">
-            <!-- Card 1 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card card-custom shadow-sm h-100">
-                    <div class="card-body d-flex flex-column">
-                        <div class="mb-2">
-                            <span class="badge badge-porto">Porto</span>
-                            <span class="badge badge-gaia">Gaia</span>
-                        </div>
-                        <h3 class="card-title h5">Património e História</h3>
-                        <p class="card-text flex-grow-1">Descubra a Ponte Luís I, a Sé do Porto e o Mosteiro da Serra do Pilar.</p>
-                        <a href="monumentos.html" class="btn btn-custom mt-2 align-self-start">Ver Monumentos</a>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Card 2 -->
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card card-custom shadow-sm h-100">
-                    <div class="card-body d-flex flex-column">
-                        <div class="mb-2">
-                            <span class="badge badge-gaia">Caves de Gaia</span>
+        <!-- Secção de Cartões Temáticos -->
+        <section class="mb-5" aria-labelledby="titulo-destaques">
+            <h2 id="titulo-destaques" class="h4 fw-bold mb-3">Explorar por Área Temática</h2>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card card-custom shadow-sm h-100">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge badge-porto">Porto</span>
+                                <span class="badge badge-gaia">Gaia</span>
+                            </div>
+                            <h3 class="card-title h5">Património e História</h3>
+                            <p class="card-text flex-grow-1">Conheça a arquitetura em ferro da Ponte Luís I, a imponência barroca da Torre dos Clérigos e a vista circular do Mosteiro da Serra do Pilar.</p>
+                            <a href="monumentos.html" class="btn btn-custom mt-2 align-self-start">Ver Monumentos</a>
                         </div>
-                        <h3 class="card-title h5">Gastronomia e Vinhos</h3>
-                        <p class="card-text flex-grow-1">Prove a tradicional Francesinha e visite as caves de Vinho do Porto em Gaia.</p>
-                        <a href="gastronomia.html" class="btn btn-custom mt-2 align-self-start">Explorar Sabores</a>
                     </div>
                 </div>
-            </div>
 
-            <!-- Card 3 -->
-            <div class="col-12 col-md-12 col-lg-4">
-                <div class="card card-custom shadow-sm h-100">
-                    <div class="card-body d-flex flex-column">
-                        <div class="mb-2">
-                            <span class="badge badge-porto">Margem Norte & Sul</span>
+                <!-- Card 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card card-custom shadow-sm h-100">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge badge-gaia">Caves de Gaia</span>
+                                <span class="badge badge-porto">Tradição</span>
+                            </div>
+                            <h3 class="card-title h5">Gastronomia e Vinhos</h3>
+                            <p class="card-text flex-grow-1">Descubra a história da icónica Francesinha, as Tripas à Moda do Porto e os roteiros de provas comentadas nas caves de Vinho do Porto.</p>
+                            <a href="gastronomia.html" class="btn btn-custom mt-2 align-self-start">Explorar Sabores</a>
                         </div>
-                        <h3 class="card-title h5">Roteiros e Miradouros</h3>
-                        <p class="card-text flex-grow-1">Itinerários pedestres pelas duas margens do rio Douro com vistas panorâmicas.</p>
-                        <a href="roteiros.html" class="btn btn-custom mt-2 align-self-start">Ver Roteiros</a>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card card-custom shadow-sm h-100">
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <span class="badge badge-porto">Margem Norte &amp; Sul</span>
+                            </div>
+                            <h3 class="card-title h5">Roteiros e Miradouros</h3>
+                            <p class="card-text flex-grow-1">Itinerários pedestres de meio dia ou dia inteiro pelas duas margens do Douro, com dicas de mobilidade e paragens fotográficas.</p>
+                            <a href="roteiros.html" class="btn btn-custom mt-2 align-self-start">Ver Roteiros</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="mt-5">
-            <h2 class="h4 mb-3">Perguntas Frequentes sobre a Visita</h2>
+
+        <!-- Secção de Informação Rápida de Mobilidade -->
+        <section class="mb-5" aria-labelledby="titulo-mobilidade">
+            <h2 id="titulo-mobilidade" class="h4 fw-bold mb-3">Informação Prática de Deslocação</h2>
+            <div class="row g-3">
+                <div class="col-12 col-md-4">
+                    <div class="p-3 bg-white rounded border h-100">
+                        <h3 class="h6 fw-bold">Metro do Porto (Linha D)</h3>
+                        <p class="small mb-0">Liga diretamente o centro do Porto (Aliados / São Bento) a Vila Nova de Gaia (Jardim do Morro, General Torres e Santo Ovídio) através do tabuleiro superior da Ponte Luís I.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="p-3 bg-white rounded border h-100">
+                        <h3 class="h6 fw-bold">Teleférico de Gaia</h3>
+                        <p class="small mb-0">Percurso panorâmico de 5 minutos entre o Jardim do Morro (cota alta) e o Cais de Gaia (cota baixa junto às caves), com cabines acessíveis a cadeiras de rodas.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="p-3 bg-white rounded border h-100">
+                        <h3 class="h6 fw-bold">Travessia Fluvial</h3>
+                        <p class="small mb-0">Barcos tradicionais fazem a ligação rápida entre o Cais da Ribeira (Porto) e o Cais de Gaia (Afurada / Caves) durante todo o dia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secção FAQ -->
+        <section class="mt-5" aria-labelledby="titulo-faq">
+            <h2 id="titulo-faq" class="h4 fw-bold mb-3">Perguntas Frequentes sobre a Visita</h2>
             <div class="accordion accordion-custom" id="faqGuia">
                 <div class="accordion-item">
                     <h3 class="accordion-header">
@@ -119,7 +156,7 @@
                     </h3>
                     <div id="pergunta1" class="accordion-collapse collapse show" data-bs-parent="#faqGuia">
                         <div class="accordion-body">
-                            Pode atravessar gratuitamente pelo tabuleiro superior da <strong>Ponte Luís I</strong> (com vista panorâmica e acesso ao Jardim do Morro) ou pelo tabuleiro inferior junto à Ribeira e ao Cais de Gaia.
+                            Pode atravessar gratuitamente pelo tabuleiro superior da <strong>Ponte Luís I</strong> (a cerca de 60 metros de altura, com vista panorâmica e acesso direto ao Jardim do Morro) ou pelo tabuleiro inferior junto à Ribeira e ao Cais de Gaia.
                         </div>
                     </div>
                 </div>
@@ -132,7 +169,33 @@
                     </h3>
                     <div id="pergunta2" class="accordion-collapse collapse" data-bs-parent="#faqGuia">
                         <div class="accordion-body">
-                            O final da tarde (pôr do sol) no <strong>Mosteiro da Serra do Pilar</strong> ou no <strong>Jardim do Morro</strong> oferece a melhor luz sobre o centro histórico do Porto.
+                            O final da tarde (pôr do sol) no <strong>Mosteiro da Serra do Pilar</strong> ou no <strong>Jardim do Morro</strong> oferece a melhor iluminação dourada sobre as fachadas históricas da Ribeira do Porto.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta3" aria-expanded="false" aria-controls="pergunta3">
+                            É necessário reservar com antecedência a visita às caves de Vinho do Porto?
+                        </button>
+                    </h3>
+                    <div id="pergunta3" class="accordion-collapse collapse" data-bs-parent="#faqGuia">
+                        <div class="accordion-body">
+                            Sim, sobretudo entre maio e outubro e aos fins de semana. As visitas guiadas têm horários fixos por idioma e incluem provas comentadas de vinhos Tawny, Ruby ou Branco.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pergunta4" aria-expanded="false" aria-controls="pergunta4">
+                            Os percursos principais são acessíveis a pessoas com mobilidade condicionada?
+                        </button>
+                    </h3>
+                    <div id="pergunta4" class="accordion-collapse collapse" data-bs-parent="#faqGuia">
+                        <div class="accordion-body">
+                            As zonas marginais (Cais de Gaia e Ribeira) são planas e possuem pavimentos regulares. Para vencer o desnível entre a cota baixa e a cota alta sem subir escadarias, recomenda-se o <strong>Metro (Linha D)</strong>, o <strong>Funicular dos Guindais</strong> ou o <strong>Teleférico de Gaia</strong>. Consulte mais detalhes na página <a href="acessibilidade.html">Acessibilidade</a>.
                         </div>
                     </div>
                 </div>
@@ -148,9 +211,8 @@
         </address>
         <p>&copy; 2026 Descobrir Gaia e Porto. Trabalho Prático de Programação Web - Cliente.</p>
     </footer>
+
     <!-- JS Oficial do Bootstrap v5.3.3 -->
-    <script 
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
